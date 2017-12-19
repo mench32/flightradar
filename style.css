@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'Monaco';
+	src: url(./monaco.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #888;
+	font-size: 14px;
+	font-weight: normal;
+	background: #0c0c0c;
+}
+
+.app {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.table {
+	cursor: default;
+	margin: 0 auto;
+	padding: 20px 20px 20px 0;
+	background: #010101;
+}
+.table th {
+	padding-left: 20px;
+	padding-top: 4px;
+	padding-bottom: 6px;
+	font-size: 10px;
+	color: #fdfdfd;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+}
+.table tr:hover .box {
+	text-shadow: 0px 0px 4px rgba(255,255,255, .6);
+	background-image: repeating-linear-gradient(90deg, rgb(40, 55, 59), rgb(40, 55, 59) calc(1em - 1.6px), #010101 calc(1em - 2.4px), #010101 calc(1em + 2.4px));
+	color: #fff;
+}
+.table tr:hover .box.yellow {
+	color: rgb(200, 200, 37);
+}
+.table td {
+	padding-left: 20px;
+	padding-bottom: 6px;
+	overflow: hidden;
+}
+.box {
+	display: block;
+	box-sizing: border-box;
+	font-family: 'Monaco';
+	font-size: 1em;
+	margin-right: -3px;
+	padding-left: 2px;
+	text-align: left;
+	font-weight: blod;
+	letter-spacing: 8px;
+	color: #C3CDC4;
+	line-height: 18px;
+	text-shadow: 0px 0px 4px rgba(255,255,255, .2);
+	background-image: repeating-linear-gradient(90deg, rgb(20, 35, 39), rgb(20, 35, 39) calc(1em - 1.6px), #010101 calc(1em - 2.4px), #010101 calc(1em + 2.4px));
+}
+
+.box.yellow {
+	color: #BEB826;
+}
+
+.box.number {
+	text-align: right;
+    margin-right: -2px;
+    padding-left: 1px;
+    padding-right: 0px;
+}
