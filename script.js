@@ -5,7 +5,6 @@ const dme = {
 
 const app = document.querySelector('#content');
 
-
 const createList = (data) => {
 	let list = [];
 
